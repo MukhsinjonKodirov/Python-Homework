@@ -1,89 +1,72 @@
-age = int(input('your age'))
-if age <= 12:
-    print('Your discount is 50%')
-elif age>=60:
-    print('Your discount is 30%')
-else: print('No discount')
+# 1. Create and Access List Elements
+fruits = ["Apple", "Banana", "Cherry", "Orange", "Grapes"]
+print(fruits[2])
 
+# 2. Concatenate Two Lists
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined_list = list1 + list2
+print(combined_list)
 
-password = input('enter your password')
-if password == "secure123":
-    print('Successful')
-else: print('Access denied')
+# 3. Extract Elements from a List
+numbers = [10, 20, 30, 40, 50, 60, 70]
+middle_index = len(numbers) // 2
+extracted = [numbers[0], numbers[middle_index], numbers[-1]]
+print(extracted
 
+# 4. Convert List to Tuple
+movies = ["Inception", "Interstellar", "Matrix", "Titanic", "Avatar"]
+movies_tuple = tuple(movies)
+print(movies_tuple)
 
-score = int(input('Enter students score'))
-if score >= 90 >= 100:
-    print('Your grade is A')
-elif 80 <= score <= 89:
-    print('Your grade is B')
-elif 70 <= score <= 79:
-    print('Your grade is C')
-elif 0 <= score <= 70:
-    print('Your grade is F')
-else: print ('Enter a valid score')
+# 5. Check Element in a List
+cities = ["London", "New York", "Paris", "Tokyo", "Berlin"]
+print("Paris" in cities)
 
+# 6. Duplicate a List Without Using Loops
+numbers = [1, 2, 3, 4, 5]
+duplicate_numbers = numbers * 2
+print(duplicate_numbers)
 
-balance = float(1255)
-withdrawal_amount = float(input('Please enter your withdrawal amount'))
-if withdrawal_amount %10 == 0 and balance >= withdrawal_amount:
-    print('please take your money')
-elif withdrawal_amount %10 == 0 and balance <= withdrawal_amount:
-    print('insufficient funds')
-elif withdrawal_amount %10 != 0 and balance >= withdrawal_amount:
-    print('Please enter a valid amount')
-else:
-    print('Your request cannot be completed now')
+# 7. Swap First and Last Elements of a List
+nums = [10, 20, 30, 40, 50]
+nums[0], nums[-1] = nums[-1], nums[0]
+print(nums)
 
+# 8. Slice a Tuple
+num_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print(num_tuple[3:8])
 
-color = input('what is the traffic light color?')
-if color == 'red':
-    print('stop')
-elif color == 'yellow':
-    print('wait')
-elif color == 'green':
-    print ('go!')
-else: print('Traffic light is not working')
+# 9. Count Occurrences in a List
+colors = ["red", "blue", "green", "blue", "yellow", "blue"]
+print(colors.count("blue"))
 
+# 10. Find the Index of an Element in a Tuple
+animals = ("cat", "dog", "elephant", "lion", "tiger")
+print(animals.index("lion")
 
-Number = int(input('enter your number'))
-if Number %2 == 0 :
-    print('you have entered an even number')
-else: 
-    print('you have entered an odd number')
+# 11. Merge Two Tuples
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+merged_tuple = tuple1 + tuple2
+print(merged_tuple)
 
+# 12. Find the Length of a List and Tuple
+list_example = [10, 20, 30, 40]
+tuple_example = (100, 200, 300)
+print(len(list_example), len(tuple_example))
 
-Weight = int(input('enter your weight in kgs'))
-Height = float(input('enter your height in meters'))
-BMI = Weight/(Height**2)
-print (BMI)
-if BMI <= 18.5:
-    print('Underweight')
-elif 18.6 <= BMI <= 24.9:
-    print('Normal')
-elif 25.0 <= BMI <= 29.9:
-    print('Normal')    
-else:
-    print('Obese')
+# 13. Convert Tuple to List
+tuple_numbers = (5, 10, 15, 20, 25)
+list_numbers = list(tuple_numbers)
+print(list_numbers)
 
+# 14. Find Maximum and Minimum in a Tuple
+num_tuple = (11, 22, 33, 44, 55)
+print(max(num_tuple), min(num_tuple))
 
-Temperature = float(input('what is the teperature today in celcius?'))
-if Temperature <= 0:
-    print('Freezing. Be careful')
-elif -100 < Temperature <= 15:
-    print('Its cold. Stay warm')
-elif 15 <= Temperature <= 20:
-    print('The weather is warm today')   
-elif 20 <= Temperature <= 28:
-    print('No need for a jacket') 
-else:
-    print('Its hot outside')
+# 15. Reverse a Tuple
+words_tuple = ("Python", "is", "fun")
+reversed_tuple = words_tuple[::-1]
+print(reversed_tuple)
 
-
-Total_cart_amount = float(input('what is the total order amount?'))
-Shipping_cost = Total_cart_amount*0.03
-Total_cost = Total_cart_amount + Shipping_cost
-if Total_cart_amount >= 50:
-    print(f'You are eligible for a free shipping on this order and your total cost is {Total_cart_amount}')
-elif Total_cart_amount < 50:
-    print(f'You are not eligible for a free shipping on this order. Your shipping cost is {Shipping_cost} and your total is {Total_cost}')
